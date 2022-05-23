@@ -1,0 +1,94 @@
+.home{
+  height: calc(100vh - 100px);
+  display: flex;
+  overflow:hidden;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  .my-pic{
+    animation: left-side-entrance 0.7s;
+    img{
+      width: 480px;
+      height: 480px;
+      border-radius: 50%;
+      transform: rotate(335deg);
+    }
+  }
+  .about-me{
+    margin-left: 5rem;
+    width: 35%;
+    opacity: 0;
+    animation: right-side-entrance 0.7s 0.7s;
+    animation-fill-mode: forwards;
+    &-title{
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+    .hi{
+      font-size: 4em;
+      font-weight: bolder;
+    }
+    &-text{
+      font-size: 1.2em;
+      font-weight: 300;
+      text-align: justify;
+    }
+  }
+}
+@keyframes left-side-entrance {
+  from {
+    transform: translateX(-250px);
+    opacity: 0.3;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes right-side-entrance {
+   from {
+     transform: translateX(+250px);
+     opacity: 0.3;
+   }
+   to {
+     transform: translateX(0px);
+     opacity: 1;
+   }
+ }
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  .home{
+    text-align: center;
+    flex-direction: column;
+    height: unset;
+    margin-bottom: 100px;
+    .my-pic{
+      img{
+        width: 250px;
+        height: 250px;
+      }
+    }
+    .about-me{
+      width: 70%;
+      margin: 0;
+      &-title{
+        font-weight: bold;
+        font-size: 1.5em;
+      }
+      .hi{
+        font-size: 4em;
+        font-weight: bolder;
+      }
+      &-text{
+        font-size: 1.2em;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.container{
+  height: 20px;
+  width: 100%;
+  background-color: #dfdfdf;
+  border-radius: 40px;
+}
+.value{
+  height: 100%;
+  border-radius:40px;
+  display: flex;
+  background-color: orange;
+  justify-content: flex-end;
+  align-items: center;
+  transition: 1.5s ease-out 0.5s;
+}
