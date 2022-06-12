@@ -44,8 +44,8 @@ const Contact = () => {
                     <h3 className="contact-ways-title">
                         WebSite:
                     </h3>
-                    <a target="_blank" rel="noopener noreferrer" className="contact-ways-text" title="https://tfdev.ir" href="https://tfdev.ir">
-                        www.tfdev.ir
+                    <a target="_blank" rel="noopener noreferrer" className="contact-ways-text" title="https://tf-dev.netlify.app" href="https://tf-dev.netlify.app">
+                        tf-dev.netlify.app
                     </a>
                 </div>
                 <div className="contact-ways">
