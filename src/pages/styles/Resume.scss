@@ -10,7 +10,7 @@
       font-weight: 500;
       img{
         margin-top: 5rem;
-        width: 400px;
+        width: 350px;
       }
     }
   }
@@ -76,11 +76,11 @@
       .item{
         margin-top: 35px;
         display: flex;
+        gap: 20px;
         flex-direction: row;
         width: 100%;
         span{
           width: 10%;
-          margin-right: 5px;
         };
       }
     }
@@ -125,5 +125,39 @@
   }
   to {
     opacity: 1;
+  }
+}
+@media (max-width: 1024px) {
+  .resume{
+    &-container{
+      margin: 5rem;
+    }
+    & .resume-parts{
+      flex-direction: column;
+      align-items: center;
+      .title{
+        display: flex;
+        align-items: center;
+      }
+      img{
+        width: 300px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+      }
+    }
+    .skills-list{
+      width: 100%;
+      .item{
+        flex-direction: column;
+        gap: 5px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .resume{
+    &-container{
+      margin: 5rem 1rem;
+    }
   }
 }

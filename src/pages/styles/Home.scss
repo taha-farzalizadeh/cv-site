@@ -63,6 +63,12 @@
     opacity: 1;
   }
 }
+@media (max-width: 1024px){
+  .home .my-pic img{
+    width: 360px;
+    height: 360px;
+  }
+}
 @media (max-width: 768px) {
   .home{
     text-align: center;
